@@ -1,0 +1,39 @@
+{
+  "name": "drt_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "_moduleAliases": {
+    "@": "lib",
+    "@app": "lib/app",
+    "@data": "lib/data"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k2pat/drt_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k2pat/drt_server/issues"
+  },
+  "homepage": "https://github.com/k2pat/drt_server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "bigchaindb-orm": "^3.0.3",
+    "crypto-js": "^4.0.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.4.2",
+    "handy-redis": "^2.2.1",
+    "jsonata": "^1.8.4",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.1"
+  }
+}
