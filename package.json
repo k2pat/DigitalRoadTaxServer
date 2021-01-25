@@ -13,7 +13,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon main"
+    "dev": "nodemon main",
+    "dev_autorenew": "node lib/app/batch/auto_renew/auto_renew.js"
   },
   "repository": {
     "type": "git",
