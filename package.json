@@ -4,7 +4,8 @@
   "description": "",
   "main": "lib/server.js",
   "directories": {
-    "lib": "lib"
+    "lib": "lib",
+    "batch": "lib/app/batch"
   },
   "_moduleAliases": {
     "@": "lib",
@@ -13,8 +14,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon main",
-    "dev_autorenew": "node lib/app/batch/auto_renew/auto_renew.js"
+    "dev": "export GOOGLE_APPLICATION_CREDENTIALS='lib/app/drt-service-account-file.json' && nodemon main"
   },
   "repository": {
     "type": "git",
@@ -35,6 +35,7 @@
     "handy-redis": "^2.2.1",
     "jsonata": "^1.8.4",
     "module-alias": "^2.2.2",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "stripe": "^8.132.0"
   }
 }
