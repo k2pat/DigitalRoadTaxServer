@@ -14,7 +14,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "export GOOGLE_APPLICATION_CREDENTIALS='lib/app/drt-service-account-file.json' && nodemon main"
+    "dev": "export GOOGLE_APPLICATION_CREDENTIALS='lib/app/drt-service-account-file.json' && nodemon main",
+    "coverage_test": "export GOOGLE_APPLICATION_CREDENTIALS='lib/app/drt-service-account-file.json' && c8 node ./lib/server.js",
+    "coverage_report": "c8 report",
+    "nyc": "export GOOGLE_APPLICATION_CREDENTIALS='lib/app/drt-service-account-file.json' && nyc --reporter=lcov --reporter=text-summary node ./lib/server.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +32,7 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "bigchaindb-orm": "^3.0.3",
+    "c8": "^7.4.0",
     "crypto-js": "^4.0.0",
     "express": "^4.17.1",
     "firebase-admin": "^9.4.2",
@@ -36,6 +40,7 @@
     "jsonata": "^1.8.4",
     "module-alias": "^2.2.2",
     "moment": "^2.29.1",
+    "nyc": "^15.1.0",
     "stripe": "^8.132.0"
   }
 }

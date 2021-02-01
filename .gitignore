@@ -3,3 +3,5 @@ drt-service-account-file.json
 server.cert
 server.key
 .wellknown
+.*
+coverage
